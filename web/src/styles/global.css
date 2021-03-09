@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: #ebf2f5;
+}
+
+body .dark {
+    color: rgb(17, 17, 17);
+    background: #ebf2f5;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 18px raleway, sans-serif;
+}

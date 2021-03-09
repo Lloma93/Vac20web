@@ -1,0 +1,74 @@
+#login-page {
+    /* Home */
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-width: 400px;
+    /* Gradiente / Blue */
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-page .content-wrapper {
+    position: relative;
+    max-width: 1100px;
+    min-width: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#login-page .content-wrapper p {
+    margin: 6px;
+}
+
+#login-page .content-wrapper p {
+    margin: 6px;
+}
+
+#login-page .content-wrapper input {
+    margin: 6px;
+    width: 260px;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    padding-left: 4px;
+}
+
+#login-page .content-wrapper input:focus {
+    background: #edf3ef;
+}
+
+#login-page .content-wrapper .recovery-password {
+    position: absolute;
+}
+
+.mt {
+    margin-top: 12px;
+}
+
+#login-page .content-wrapper .button-password {
+    background-color: #92e3a9;
+    border-radius: 20px;
+    height: 40px;
+    width: 260px;
+    border: none;
+    margin: 6px;
+}
+
+#login-page .content-wrapper .button-password:hover {
+    background-color: #96feff;
+}
+
+#login-page .content-wrapper .button-password:focus {
+    background-color: #96feff;
+}
+
+#login-page .content-wrapper main h1 {
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 70px;
+}
