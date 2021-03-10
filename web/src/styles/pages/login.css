@@ -3,7 +3,8 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    min-width: 400px;
+    min-width: 320px;
+    min-height: 700px;
     /* Gradiente / Blue */
     background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
     display: flex;
@@ -11,10 +12,33 @@
     align-items: center;
 }
 
+.divPequenas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.mobilelogo {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 300px 0px 30px;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%); */
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px;
+}
+
 #login-page .content-wrapper {
-    position: relative;
-    max-width: 1100px;
-    min-width: 300px;
+    position: relaabsolutetive;
+    max-width: 1300px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -70,5 +94,9 @@
 #login-page .content-wrapper main h1 {
     font-size: 76px;
     font-weight: 800;
-    line-height: 70px;
+    line-height: 90px;
+}
+
+.imgLogin {
+    margin-top: 250px;
 }

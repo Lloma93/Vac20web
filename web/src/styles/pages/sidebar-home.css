@@ -3,6 +3,7 @@
     height: 100vh;
     position: relative;
     display: flex;
+    flex-direction: row;
 }
 
 #page-map aside {
@@ -36,6 +37,10 @@
     font-weight: 800;
 }
 
+#page-map div {
+    width: 100%;
+}
+
 #page-map .approve {
     position: absolute;
     right: 40px;
@@ -53,16 +58,30 @@
     background: #17d6eb;
 }
 
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: initial;
+}
+
 #page-map .logout {
-    right: -20px;
-    bottom: -20px;
+    margin: 40px;
     width: 64px;
     height: 64px;
     background: #15c3d6;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     transition: background-color 0.2s;
+}
+
+.logout {
+    color: white;
+}
+
+.logout:hover {
+    color: rgb(250, 29, 121);
 }
 
 #page-map .logout:hover {

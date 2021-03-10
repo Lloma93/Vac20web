@@ -191,3 +191,31 @@
 .home-details .home-details-content button.contact-button:hover {
     background: #36CF82;
 }
+
+.table_div {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table_div .table {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.box_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #15B6D6;
+}
+
+.box_icon :focus {
+    color: #e71095;
+}
+
+.box_icon :hover {
+    color: #e71095;
+    cursor: pointer;
+}

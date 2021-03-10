@@ -1,5 +1,22 @@
 .list {
     display: flexbox;
-    margin-top: 180px;
+    margin-top: 40px;
     margin-left: 40px;
+}
+
+.list h1 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.list table,
+td,
+th {
+    width: 640px;
+    font-size: 12px;
+    border: 1px solid lightseagreen;
+}
+
+.mt {
+    margin-top: 22px;
 }
