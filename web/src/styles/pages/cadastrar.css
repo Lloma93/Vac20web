@@ -1,0 +1,50 @@
+#cadastrar-page {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-form {
+    display: flex;
+}
+
+#cadastrar-page h1 {
+    margin: 30px;
+}
+
+#cadastrar-page .button-cadastro {
+    background-color: #ffa2d8;
+    border-radius: 20px;
+    height: 40px;
+    width: 260px;
+    border: none;
+    margin: 6px;
+}
+
+#cadastrar-page .button-cadastro:hover {
+    background-color: #ff96df;
+}
+
+#cadastrar-page .button-cadastro:focus {
+    background-color: #ff96df;
+}

@@ -4,7 +4,7 @@ import MuiAlert from '@material-ui/lab/Alert';
 import TextField from '@material-ui/core/TextField';
 import '../styles/pages/login.css';
 import login01 from '../assets/images/login01.svg'
-import logo from '../assets/logo/Logo_EVAC_Sem_Background.png'
+import logo from '../assets/logo/logopng.png'
 import { Link } from 'react-router-dom'
 import api from '../services/api'
 import { useHistory } from "react-router-dom";
@@ -44,7 +44,7 @@ function Login() {
 
     var handleSubmit = () => {
 
-        api.post('login', logon).then(response => {
+        api.post('/business/login', logon).then(response => {
 
             if (response.status === 200 && response.data.token !== '' &&
                 response.data.token !== undefined && response) {
@@ -70,24 +70,22 @@ function Login() {
                 <div className="divPequenas">
 
 
-                    <div className="divPequenas">
-
-                        
-                        <img src={logo} alt="img" width="300px"/>
-
-                    </div>
                     <div className="mobilelogo">
 
-                        <h1> eVac20 Parceiros </h1>
-                        
-                        <img src={login01} alt="img" />
+                        <h1> eVac20 </h1>
+                        <img src={login01} alt="img" width="350%"/>
                     </div>
-                    <div className="mobile">
+                    <div className="mobile center">
+
+                        <img src={logo} alt="img" width="55%"/>
                         <label>Login:</label>
-                        <input type="text" id="login" onChange={handleChangeLogin} ></input>
+                        <input type="text" id="login" onChange={handleChangeLogin} />
                         <label>Senha:</label>
                         <input type="password" id="senha" onChange={handleChangePassword}></input>
                         <button className="button-password" onClick={handleSubmit} disabled={disabledButton}>Logar</button>
+                        <button className="button-cadastro" onClick={handleSubmit} > 
+                        <Link to="/cadastrar" >
+                                    Cadastrar</Link></button>
                         <div >
                             <p>Esqueceu seu login? < p />
                                 <Link to="/help" className="recovery-password">
